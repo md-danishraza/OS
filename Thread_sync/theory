@@ -1,0 +1,18 @@
+Thread synchronization is a mechanism that ensures that two or more concurrent threads do not simultaneously execute the same program segment called critical section.
+
+thread sync techniques
+
+1. Locks
+2. Rlocks
+3. Semaphores
+
+<!-- Locks -->
+
+lock has two states
+Locked :- lock has been acquired by one thread and so other threads cannot acquire it until the lock is released
+Unlocked :- lock has not been acquired by any thread and so other threads can make an attempt to acquire it.
+
+steps
+create a lock object of lock class from thread
+acquire(blocking = True, timeout = -1) to acquire the lock
+release() to release the lock
